@@ -1,0 +1,63 @@
+.form-group .form-control {
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(238, 236, 236)),
+    linear-gradient(#ffffff, #ffffff);
+}
+
+.advancedSearchTextbox {
+  padding: 2px 0px 11px 0px;
+  margin: 7px 1px;
+  width: 134%;
+}
+
+.Register h4 {
+  font-family: "Baloo Tammudu 2", "cursive", sans-serif;
+  font-weight: bolder;
+  font-size: 2rem;
+  margin-top: -131px;
+  padding-bottom: 93px;
+  color: white;
+}
+
+/* Button primary */
+.ant-btn-background-ghost.ant-btn-primary {
+  color: grey;
+  border-color: grey;
+}
+
+.ant-btn-background-ghost.ant-btn-primary:hover {
+  color: black;
+  border-color: grey;
+}
+
+.ant-btn-background-ghost.ant-btn-primary:hover,
+.ant-btn-background-ghost.ant-btn-primary:focus {
+  color: black;
+  background: transparent;
+  border-color: black;
+}
+
+/* ant-input */
+.ant-input {
+  padding: 10px 14px;
+  border-color: grey;
+}
+.ant-input-affix-wrapper {
+  padding: 10px 14px;
+}
+
+.ant-input-affix-wrapper:hover {
+  border-color: grey;
+}
+
+.ant-input-affix-wrapper:focus,
+.ant-input-affix-wrapper-focused {
+  border-color: grey;
+}
+
+.success-focus:focus {
+  border: 2px solid grey;
+}
+
+.success-focus:hover {
+  border: 2px solid grey;
+}

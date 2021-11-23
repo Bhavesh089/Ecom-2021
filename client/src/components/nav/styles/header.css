@@ -1,0 +1,482 @@
+.menuBar {
+  padding: 18px 20px;
+  border-bottom: solid 1px #ffffff;
+  overflow: auto;
+  box-shadow: 0 0 30px #100d0d;
+  position: sticky;
+  background-color: white;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 99;
+  position: sticky;
+}
+
+/* logo */
+.logo {
+  width: 150px;
+  float: left;
+  height: fit-content;
+}
+
+.logo span {
+  font-size: 22px;
+  font-family: "Poiret One", "Baloo Tammudu 2", "cursive", sans-serif, Arial,
+    Helvetica, sans-serif;
+}
+
+.logo img {
+  display: inline;
+  width: 44%;
+}
+
+.menuCon {
+  width: calc(100% - 150px);
+  float: left;
+}
+
+.menuCon .ant-menu-item {
+  padding: 0px 5px;
+}
+
+.menuCon .ant-menu-submenu-title {
+  padding: 10px 20px;
+}
+
+.menuCon .ant-menu-item a,
+.menuCon .ant-menu-submenu-title a {
+  padding: 10px 15px;
+}
+
+.menuCon .ant-menu-horizontal {
+  border-bottom: none;
+  padding: 0px 0px 0px 5px;
+}
+
+/* menu right */
+.menuCon .rightMenu {
+  float: right;
+}
+
+.barsMenu {
+  float: right;
+  height: 32px;
+  padding: 6px;
+  margin-top: 8px;
+  display: none;
+  background: none;
+}
+
+.barsBtn {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: #100d0d;
+  position: relative;
+}
+
+.barsBtn:after,
+.barsBtn:before {
+  content: attr(x);
+  width: 20px;
+  position: absolute;
+  top: -6px;
+  left: 0;
+  height: 2px;
+  background: black;
+}
+
+.barsBtn:after {
+  top: auto;
+  bottom: -6px;
+}
+
+.ant-drawer-body {
+  padding: 0;
+}
+
+.barsMenu > span {
+  display: block;
+}
+
+.ant-drawer-body .ant-menu-horizontal > .ant-menu-item,
+.ant-drawer-body .ant-menu-horizontal > .ant-menu-submenu {
+  display: inline-block;
+  width: 100%;
+}
+
+.ant-drawer-body .ant-menu-horizontal {
+  border-bottom: none;
+}
+
+.ant-drawer-body .ant-menu-horizontal > .ant-menu-item:hover {
+  border-bottom-color: transparent;
+}
+
+/* menu-bar */
+.ant-menu-horizontal > .ant-menu-item a {
+  font-family: "Poiret One", "Baloo Tammudu 2", "cursive", sans-serif, "Arial",
+    sans-serif;
+  font-size: 158%;
+}
+
+.ant-menu-horizontal > .ant-menu-item a:hover {
+  color: #1890ff;
+  font-family: "Poiret One", "Poiret One", "Baloo Tammudu 2", "cursive",
+    sans-serif, "Arial", sans-serif;
+  font-weight: bolder;
+  font-size: 158%;
+}
+
+.ant-menu-horizontal > .ant-menu-submenu > .ant-menu-submenu-title {
+  font-family: "Poiret One", "Baloo Tammudu 2", "cursive", sans-serif, "Arial";
+
+  font-size: 158%;
+}
+
+.ant-menu-horizontal > .ant-menu-submenu > .ant-menu-submenu-title:hover {
+  padding: 0;
+  font-family: "Poiret One", "Baloo Tammudu 2", "cursive", sans-serif, "Arial",
+    sans-serif;
+  color: black;
+  font-weight: bolder;
+  font-size: 158%;
+}
+
+/* links in the header */
+/* .ant-menu-horizontal > .ant-menu-item a {
+  font-family: "Baloo Tammudu 2", "cursive", sans-serif, "Arial", sans-serif;
+  font-size: 158%;
+  color: black;
+}*/
+
+.ant-menu-item-selected {
+  color: black;
+}
+
+.ant-menu-item:hover,
+.ant-menu-item-active,
+.ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open,
+.ant-menu-submenu-active,
+.ant-menu-submenu-title:hover {
+  color: black;
+}
+
+.ant-menu-item a {
+  font-family: "Poiret One", "Baloo Tammudu 2", "cursive", sans-serif, "Arial",
+    sans-serif;
+  font-size: 158%;
+  color: black;
+}
+
+.ant-menu-horizontal > .ant-menu-item-selected a {
+  color: black;
+  font-weight: bold;
+}
+
+.ant-menu-item-selected a,
+.ant-menu-item-selected a:hover {
+  color: black;
+}
+
+.ant-menu-horizontal > .ant-menu-item a:hover {
+  font-family: "Poiret One", "Baloo Tammudu 2", "cursive", sans-serif, "Arial",
+    sans-serif;
+  font-size: 158%;
+  color: black;
+}
+
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu:hover,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-active,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-active,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-open,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-open,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-selected {
+  color: black;
+  border-bottom: white;
+}
+
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu:hover,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-active,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-active,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-open,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-open,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-selected {
+  color: none;
+  border-bottom: white;
+}
+
+/* bottom border trasistion */
+a.left {
+  position: relative;
+}
+
+a.left:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+a.left:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+
+.ant-menu-item a::before {
+  top: 50px;
+  right: 0;
+}
+
+.ant-menu-item a:hover {
+  color: black;
+  font-weight: bolder;
+}
+
+/* hearticoncss */
+
+.hearticon {
+  font-size: 100%;
+  margin-right: -31px;
+}
+
+/* side bar */
+.my-drawer .ant-drawer-content {
+  position: relative;
+  z-index: 1;
+  overflow: auto;
+  background-color: #ffffff;
+  background-clip: padding-box;
+  border: 0;
+}
+
+.my-drawer .ant-menu {
+  background-color: white;
+}
+
+.my-drawer .ant-drawer-title {
+  margin: 0;
+  color: rgba(0, 0, 0, 0.85);
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 22px;
+}
+
+.my-drawer .ant-drawer-header {
+  position: relative;
+  padding: 16px 25px;
+  color: rgb(207 200 200 / 65%);
+  background: #ffffff;
+  border-bottom: 1px solid #000000;
+  border-left: 1px solid #000000;
+  border-radius: 88px 2px 0 0;
+  font-family: "Poiret One";
+}
+
+@media (min-width: 767px) {
+  .phone-fix {
+    display: none;
+  }
+}
+/* .phone-fix {
+  visibility: hidden;
+} */
+/* bottom navigation */
+/* .phone-fix {
+  display: none;
+} */
+
+@media (max-width: 767px) {
+  .barsMenu {
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: -85px;
+  }
+
+  .display-non {
+    display: none;
+  }
+
+  .leftMenu,
+  .rightMenu {
+    display: none;
+  }
+
+  /* logo */
+  .logo {
+    width: 75px;
+    float: left;
+    height: fit-content;
+  }
+
+  .logo span {
+    font-size: 18px;
+    font-family: "Poiret One", "Baloo Tammudu 2", "cursive", Arial, Helvetica,
+      sans-serif;
+  }
+
+  .menuCon .ant-menu-item,
+  .menuCon .ant-menu-submenu-title {
+    padding: 1px 20px;
+  }
+
+  .logo a {
+    padding: 10px 20px;
+  }
+
+  .search {
+    padding-left: 10px;
+  }
+
+  .phone-fix {
+    width: 100%;
+    bottom: 0;
+    position: sticky;
+    justify-content: center;
+    align-items: center;
+    margin-top: 127px !important;
+    z-index: 99;
+  }
+
+  .phone {
+    width: 100%;
+    height: 1px;
+    margin: auto;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    justify-content: center;
+  }
+
+  .phone_content {
+    filter: contrast(20);
+    width: 100%;
+
+    background-color: transparent;
+    overflow: hidden;
+    position: absolute;
+  }
+  .phone_bottom {
+    width: 100%;
+    height: 66px;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    filter: blur(10px);
+  }
+
+  .phone input {
+    display: none;
+  }
+
+  label {
+    cursor: pointer;
+    display: flex;
+    width: 33%;
+    height: 66px;
+    position: relative;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+  }
+
+  label > .my-badge {
+    top: -25px;
+    left: 20px;
+    transition: 200ms 100ms cubic-bezier(0.14, -0.08, 0.74, 1.4);
+  }
+  label > img {
+    width: 25px;
+    top: 0;
+    bottom: 0;
+
+    margin: auto;
+    position: absolute;
+    z-index: 3;
+    transition: 200ms 100ms cubic-bezier(0.14, -0.08, 0.74, 1.4);
+  }
+  label::before {
+    content: "";
+    position: absolute;
+  }
+
+  .circle {
+    width: 60px;
+    height: 60px;
+    background: black;
+    position: absolute;
+    top: -106px;
+    z-index: 1;
+    border-radius: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: 200ms cubic-bezier(0.14, -0.08, 0.74, 1.4);
+  }
+
+  .indicator {
+    width: 70px;
+    height: 70px;
+    background-image: linear-gradient(0deg, #f7b0b0, rgba(183, 255, 154, 0)),
+      linear-gradient(0deg, rgba(158, 255, 151, 0.75), rgba(183, 255, 154, 0)),
+      linear-gradient(0deg, #b4fffb, rgba(183, 255, 154, 0));
+    background-size: cover;
+    background-position: 0 10px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: -42px;
+    right: 0;
+    margin: auto;
+    transition: 200ms cubic-bezier(0.14, -0.08, 0.74, 1.4);
+  }
+
+  #s1:checked ~ [for="s1"] > img {
+    top: -85px;
+  }
+  #s1:checked ~ .circle,
+  #s1:checked ~ div div .indicator {
+    left: -75%;
+  }
+
+  #s2:checked ~ [for="s2"] > img {
+    top: -85px;
+  }
+
+  #s2:checked ~ [for="s2"] > .my-badge {
+    top: -65px;
+  }
+
+  #s2:checked ~ .circle,
+  #s2:checked ~ div div .indicator {
+    left: -25%;
+  }
+
+  #s3:checked ~ [for="s3"] > img {
+    top: -85px;
+  }
+  #s3:checked ~ [for="s3"] > .my-badge {
+    top: -65px;
+  }
+
+  #s3:checked ~ .circle,
+  #s3:checked ~ div div .indicator {
+    left: 25%;
+  }
+
+  #s4:checked ~ [for="s4"] > img {
+    top: -85px;
+  }
+  #s4:checked ~ .circle,
+  #s4:checked ~ div div .indicator {
+    left: 77%;
+  }
+}
